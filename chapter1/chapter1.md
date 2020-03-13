@@ -43,20 +43,59 @@ hope to give you the building blocks to write awesome Sass code. But you will re
 up writing bad Sass too. You might be familiar with the saying “Tools do not output
 bad code. Bad developers do.” Remember, Sass is just a preprocessing tool, which
 leads us to our next section.***
+
+
+
+## **What is preprocessing?**
+***As mentioned, Sass is a preprocessor. It takes Sass (.sass) or SCSS (.scss) files as
+input, and outputs CSS files (.css). Sass adds a lot of great features that can help
+to create better stylesheets, but as you know, web browsers only understand CSS,
+not Sass. What we do is write our CSS (with as much a sprinkling of Sass as needed)
+in .scss or .sass files in our code editor, and then have Sass compile that into a .css
+file for the browser to read.***
+
+***Using a preprocessing language such as Sass means we’re not bound within the
+limitations of CSS. Sass can—and does—add features that enhance our writing of
+CSS; however, it does not—and cannot—add features to CSS itself. It’s vital that
+you grasp this from the outset.***
 ```sass
 
 ```
 
 
-## ****
-******
-```sass
+## **The Tale of Two Syntaxes**
+***When talking about Sass, we usually refer to the preprocessor and the language as
+a whole; for example, a Sass project, or a Sass variable. Meanwhile, Sass (the preprocessor) allows two syntaxes:***
 
-```
+1. **Sass, also known as the indented syntax**
+2. **SCSS, or Sassy CSS, a CSS-like syntax**
 
 
-## ****
-******
+***Let’s pause for a moment for a short history lesson. Initially, `Sass` was part of another
+preprocessor (that still exists) called Haml6, which was heavily inspired by the
+programming language `Ruby`. Sass stylesheets used a Ruby-like syntax with no
+braces or semicolons, and a strict indentation:***
+
+![](img/1.png)
+
+***This was up until 2009, when the new .scss file format was introduced that adhered
+more closely to the usual CSS syntax. The rule of thumb here is if it is valid CSS,
+it’s valid `SCSS`:***
+
+![](img/2.png)
+
+***As to which syntax to use, the choice is really up to the author as both are strictly
+equivalent in features. The Sass indented syntax is shorter and lighter to type because
+almost all punctuation is gone, but it’s also incompatible with default CSS syntax.
+It would appear that SCSS is the most popular in the Sass community as it is closer
+to CSS and has an easier learning curve, contrary to the whitespace-sensitive syntax
+4 Jump Start Sassof Sass. Because of this, we’ll be using SCSS in the code displayed throughout this
+book.
+Note that “Sass” is never uppercase, no matter whether we’re talking about the
+language or the syntax. Meanwhile, “SCSS” is always uppercase. You could use
+http://SassnotSASS.com/ as a reminder.***
+
+![](img/3.png)
 ```sass
 
 ```
