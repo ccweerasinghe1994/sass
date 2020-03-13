@@ -13,7 +13,18 @@
 
     # ***Getting Started***
     1. [Getting Started](./chapter2/gettingStarted.md)
-    2. [](./chapter2/gettingStarted.md)
+    2. [Ruby Sass](./chapter2/gettingStarted.md)
+    3. [Installing Ruby](./chapter2/gettingStarted.md)
+    4. [Installing Sass](./chapter2/gettingStarted.md)
+    5. [Using Sass](./chapter2/gettingStarted.md)
+    6. [LibSass (with node-sass)](./chapter2/gettingStarted.md)
+    7. [Installing Node.js](./chapter2/gettingStarted.md)
+    8. [Installing node-sass](./chapter2/gettingStarted.md)
+    9. [Using Sass](./chapter2/gettingStarted.md)
     
 
 
+2. # **Chapter Two**
+
+    # ***Getting Started***
+    1. [Getting Started](./chapter2/gettingStarted.md)

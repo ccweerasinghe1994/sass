@@ -87,3 +87,19 @@ done, you’ll be able to install node packages, which leads us to the next step
 ***Node-sass is a Node package distributed through npm8. It provides both a commandline interface and a JavaScript API to interact with the inner program. Your first
 task is to install it—either locally in the project with --save or globally with -g:***
 ![](img/7.png)
+
+## **Using Sass**
+***The command-line interfaces (CLI) of Ruby Sass and node-sass are similar but not
+entirely compatible so if in doubt, refer to the documentation of the relevant library.
+Compiling a single file to CSS is the same as with Ruby Sass:***
+
+![](img/8.png)
+
+***You can also add the --watch flag in the same fashion to tell Sass to automatically
+recompile the file on change:***
+
+![](img/9.png)
+
+***However, it’s slightly different when you want to watch a folder:***
+
+![](img/10.png)
