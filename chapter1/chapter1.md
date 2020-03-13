@@ -101,63 +101,95 @@ http://SassnotSASS.com/ as a reminder.***
 ```
 
 
-## ****
-******
+## **LibSass**
+***There are two primary implementations of the Sass compiler: one in Ruby, and
+another (called LibSass) in C/C++. People often wonder which one is official, or
+better. The short answer is that you can use either one; they are both official. The
+latest versions should be fully interoperable with each other, and new features will
+be released in tandem from here on.***
+
+***The long answer starts in 2007 with a different language called Haml7, mentioned
+in the previous section. Hampton Catlin8 designed his HTML Abstraction Markup
+Language to provide a more structured and easier-to-read templating language for
+HTML. Before long he had added Sass to the project, bringing a similar look and
+feel to CSS. For several years Haml and Sass were packaged together in the Haml
+Ruby gem. At that point, many users saw Sass as a syntax improvement on CSS,
+with very few additional features.***
+
+***Eventually, people started to realize that Sass had more to offer than a whitespaceaware syntax. Nesting and variables grew into mixins, functions, loops, and conditions (features we’ll discuss in upcoming chapters). Sass grew bigger than Haml,
+and split off into its own project with Natalie Weizenbaum9 at the helm. Still, it
+remained a Ruby gem, and was most popular with teams that already used Ruby in
+their projects. Others were weary of adding such a large new language dependency.***
+
+1.  http://haml.info/
+2.  https://twitter.com/hcatlin
+3.  https://twitter.com/nex3
+
+
+***Hello World! 5As Sass grew and third-party Sass tools became more powerful, compilation times
+began to drag. The combination of speed and portability issues gave Hampton a
+new idea. In 2013, at the first ever Sass Conference, he announced the arrival of
+LibSass: a C/C++ port of the Sass engine. Developers started flocking to LibSass,
+speculating that it might be the end of Ruby Sass, even though it was far from
+compatible with it at the time.***
+
+***It wasn’t the end, but it did divide the community between two versions of the
+language for some time. That’s why a year later at SassConf 2014, Chris Eppstein10
+and Weizenbaum announced a feature-freeze on Ruby Sass, enabling LibSass a
+chance to catch up. The plan was to align both engines with an external specification,
+and then develop and release future features together.***
+
+***So far, it’s gone exactly according to plan. A major development push on LibSass
+was led by Marcel Greter11 and Michael Mifsud12, where feature parity (or something
+close to it) was announced at SassConf 2015. LibSass now has wrappers available
+for Go, Java, JavaScript, Lua, .Net, Node (with Gulp and Grunt plugins), Perl, PHP,
+Python, Scala, and even Ruby. The two engines are fully compatible, and Sass is
+back in development mode. Sass 4 is underway with exciting new features.***
+
+***There is still work to be done documenting the Sass specification and writing tests
+for any Sass implementation against which to develop. LibSass now has all the official Sass features working to the best of its knowledge, but without shared tests,
+parity will never be certain. In the meantime, I’ve tried to document the features
+available in different versions of Ruby Sass and LibSass with the Sass Compatibility13
+project.***
 ```sass
 
 ```
 
 
-## ****
-******
-```sass
+## **Alternative Processing Tools**
+***As with most aspects of the web industry, there are always alternatives. Although
+it was first to market, Sass now shares the land of CSS processing with other opensource projects. Stylus, Less, and PostCSS also assist with writing CSS, just like
+Sass.***
 
-```
-
-
-## ****
-******
-```sass
-
-```
-
-
-## ****
-******
-```sass
-
-```
-
-
-## ****
-******
-```sass
-
-```
-
-
-## ****
-******
-```sass
-
-```
-
-
-## ****
-******
-```sass
-
-```
-
-
-## ****
-******
-```sass
-
-```
-
-
-
-
+***Each tool has a different approach, but ends up being quite similar to the other options when it comes to features.
+Stylus14 is built in Node.js. If Sass tries to stay conservative in regard to the CSS
+language, Stylus is usually more permissive, implementing a lot of features that
+you’d consider “too much for CSS”. Additionally, Stylus is very flexible with the
+syntax: you can safely omit most bits of punctuation without risking a compilation
+error.
+Less15 is fundamentally different to Sass, despite looking similar in a number of
+ways: it is a declarative language while Sass is imperative. The difference, while
+subtle, implies a few things. When it comes to explaining the difference between
+Less and Sass, Matthew Dean explains it best16:
+A declarative language (my emphasis) describes to a machine what
+we want, and an imperative language tells the machine how to do
+it.
+...
+What that means is that Less extends the CSS language under the
+same declarative model, whereas Sass is a programming language
+whose syntax is based on CSS. Another way of saying it: both Less
+and Sass look like CSS, but Sass does not act like CSS.
+— Less, the world’s most misunderstood CSS pre-processor17
+To be frank, this is quite a deep topic of which very few developers are aware. This
+is for good reason, as it is of little consequence to know this kind of distinction
+when authoring stylesheets. All in all, Sass and Less are very similar.
+Last but not least, PostCSS18, which is written in JavaScript, has a different approach
+as it does nothing more in itself than read your stylesheet. To actually create
+something out of this tool, you have to configure plugins. A plugin is basically an***
+***instruction for PostCSS to translate one thing into another. PostCSS enjoys an ecosystem of hundreds of plugins; some of them are particularly popular, such as
+Autoprefixer19, a plugin that adds vendor prefixes to your CSS based on a given
+configuration of browsers and versions to support.
+But enough talking about the other kids on the block. I assume you chose Sass. And
+as you’ll soon discover, that is a fine choice.***
 
 
