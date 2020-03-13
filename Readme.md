@@ -11,12 +11,9 @@
     6. [Alternative Processing Tools](./chapter1/chapter1.md)
 2. # **Chapter Two**
 
-    # ***Hello World!***
-    1. [CSS in Modern Front-end Development](./chapter1/chapter1.md)
-    2. [What is Sass?](./chapter1/chapter1.md)
-    3. [What is preprocessing?](./chapter1/chapter1.md)
-    4. [The Tale of Two Syntaxes](./chapter1/chapter1.md)
-    5. [LibSass](./chapter1/chapter1.md)
-    6. [Alternative Processing Tools](./chapter1/chapter1.md)
+    # ***Getting Started***
+    1. [Getting Started](./chapter2/gettingStarted.md)
+    2. [](./chapter2/gettingStarted.md)
+    
 
 
