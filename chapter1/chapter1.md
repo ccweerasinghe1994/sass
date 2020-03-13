@@ -34,6 +34,15 @@ out the math? Sass can help you.***
 
 ***All in all, we can safely state that Sass will make it easier for you to develop websites
 and web applications—benefiting you, your client, and your clients’ users. Keep****
+***your work in check and minimize opportunities for broken designs using the power
+of Sass.***
+
+***Sass may have its downfalls but, generally, problems that developers find with Sass
+are usually when they struggle to understand some aspect of it. With this book, we
+hope to give you the building blocks to write awesome Sass code. But you will require a firm grasp of CSS as well; if you write bad CSS in the first place, you’ll end
+up writing bad Sass too. You might be familiar with the saying “Tools do not output
+bad code. Bad developers do.” Remember, Sass is just a preprocessing tool, which
+leads us to our next section.***
 ```sass
 
 ```
