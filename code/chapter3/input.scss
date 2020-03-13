@@ -1,0 +1,36 @@
+$my-variable: "Hellow world;";
+
+$font-name: "Helvatica";
+$font-type: sans-serif;
+
+.foo {
+  font-family: $font-name, $font-type;
+}
+
+$base-path: "/images/";
+$file-name: "kittens";
+$extension: "png";
+$file-path: $base-path + $file-name + "." + $extension;
+
+// '/images/kittens.png'
+
+$container-max-width: 1180px;
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: $container-max-width;
+}
+
+$element-width: 400px;
+/**
+* 1. Size the element
+* 2. Horizontally center the element in its container
+* @TODO: move to CSS transforms once we drop support for IE 8
+*/
+
+.foo {
+  width: $element-width; /* 1 */
+  position: absolute; /* 2 */
+  left: 50%; /* 2 */
+  margin-left: ($element-width / -2); /* 2 */
+}

@@ -24,7 +24,10 @@
     
 
 
-2. # **Chapter Two**
+2. # **Chapter Three**
 
     # ***Variables***
-    1. [Getting Started](./chapter2/gettingStarted.md)
+    1. [Variables](./chapter3/../docs/chapter3/variables.md)
+    2. [Data Types](./chapter3/../docs/chapter3/variables.md)
+    3. [Strings](./chapter3/../docs/chapter3/variables.md)
+    4. [Numbers](./chapter3/../docs/chapter3/variables.md)
